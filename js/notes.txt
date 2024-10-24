@@ -1,0 +1,43 @@
+
+The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page.
+The document object represents the whole html document.
+
+When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document. It has properties and methods. By the help of document object, we can add dynamic content to our web page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+
+
+
+
+
+Finding HTML Elements
+When you want to access HTML elements with JavaScript, you have to find the elements first.
+
+There are a couple of ways to do this:
+
+-Finding HTML elements by id
+-Finding HTML elements by tag name
+-Finding HTML elements by class name
+-Finding HTML elements by CSS selectors
+-Finding HTML elements by HTML object collections
+
+
+
+
+
+
+getElementById()
+Description
+The getElementById() method returns an element with a specified value.
+
+The getElementById() method returns null if the element does not exist.
+
+The getElementById() method is one of the most common methods in the HTML DOM. It is used almost every time you want to read or edit an HTML element.
+
+--------document.getElementById("idname").inneHTML="hello"
+Note
+Any id should be unique, but:
+
+If two or more elements with the same id exist, getElementById() returns the first.

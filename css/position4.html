@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-outer{
+            background-color: aliceblue;
+            margin: auto;
+            width: 500px;
+            height: 600px;
+            border: 2px solid;
+            position: relative;
+            overflow: hidden;
+        }
+        .div-inner{
+            background-color: gray;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: -100%;
+            transition: all 2s;
+        }
+        .div-outer:hover .div-inner{
+            /* position: absolute; */
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="div-outer">
+        <div class="div-inner">div-1</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anim {
+            from{left:0px; top:0px}
+            to{left:700px;top: 700px;}
+        }
+        @keyframes anim2 {
+            from{left:700px; top:0px}
+            to{left: 0px;top: 700px;}
+        }
+        #box, #box2{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: yellowgreen;
+            position: relative;
+            display: inline-block;
+            
+            /* animation-iteration-count: infinite; */
+        }
+        #box{
+            animation: anim 4s infinite;
+        }
+        #box2{
+            animation: anim2 4s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <div id="box2"></div>
+</body>
+</html>

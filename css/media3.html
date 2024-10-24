@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container,
+      .image {
+        width: 1000px;
+        height: auto;
+        margin: auto;
+      }
+      .banner {
+        background-color: silver;
+        width: 1000px;
+        height: 200px;
+      }
+      .left {
+        background-color: rgb(153, 153, 153);
+        width: 500px;
+        height: 400px;
+        float: left;
+      }
+      .right {
+        background-color: rgb(97, 96, 96);
+        width: 500px;
+        height: 400px;
+        float: left;
+      }
+      @media screen and (max-width: 999px) {
+        .container,
+        .image {
+          width: 100%;
+        }
+        .left {
+          width: 30%;
+        }
+        .right {
+          width: 70%;
+        }
+      }
+      @media screen and (max-width:700px){
+        .container, .image{
+            width: 100%;
+        }
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <img
+          class="image"
+          src="/css/assets/GiftCard-We are Back_Web banner_1.avif"
+          alt=""
+        />
+      </div>
+      <div class="left">LEFT</div>
+      <div class="right">RIGHT</div>
+    </div>
+  </body>
+</html>

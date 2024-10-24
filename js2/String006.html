@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript-String</h1>
+    <h3>replace("text to replace","replace with") //1st occurance</h3>
+    <h3>replaceAll("text to replace","replace with")</h3>
+
+    <script>
+        var txt1="JavaScript  Day-one ---- JavaScript basics";
+        var txt2=txt1.replace("JavaScript","React");
+        document.write("<a>using replace <br>")
+        document.write(txt1+"<br>")
+        document.write(txt2)
+
+        document.write("<br><br><br>");
+
+        document.write("<a>using replaceAll <br>")
+        var txt3=txt1.replaceAll("JavaSCript","REact")
+        document.write(txt3)
+
+
+    </script>
+</body>
+</html>

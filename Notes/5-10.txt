@@ -1,0 +1,31 @@
+String Methods:
+===============
+
+String Length
+String toUpperCase
+String toLowerCase
+String charAt()
+The charChodeAt() method returns the code to the character ata a specified index in a steing
+return UTF-16 code
+
+String trim
+String replace()
+String split()
+
+
+
+
+
+
+for in / for of:
+
+diff= -for in:provides acess to the object keys
+      -for of:provides acess to the vales of those keys
+
+-for in  = for object  
+-for of  = for array
+
+while,do while
+
+destructuring:unpacking values from array, or properties from object,
+              into variable(2016)

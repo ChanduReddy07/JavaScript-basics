@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th{
+        border: 2px solid black;
+        padding: 25px;
+        border-collapse: collapse;
+        background-color: grey;
+      }
+      td{
+        border: 2px solid black;
+        padding: 25px;
+        border-collapse: collapse;
+        background-color: rgb(192, 192, 192);
+      }
+      .red{
+        background-color: red;
+      }
+      .green{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Result</th>
+      </tr>
+      <script>
+        let name = prompt("Enter your Name")
+        let age = prompt("Enter your Age")
+
+        document.write("<tr><td>"+Date()+"</td><td>"+name+"</td><td>"+age+"</td>")
+
+        // document.write("<tr>")
+        // document.write("<td>")
+        // document.write(new Date())
+        // document.write("</td>")
+        // document.write("<td>")
+        // document.write(name)
+        // document.write("</td>");
+        // document.write("<td>");
+        // document.write(age);
+        // document.write("</td>");
+        // document.write("<td>");
+
+        if(age >= 18) {
+          document.write("<td class='green'>Elgible</td><tr>")
+        } else {
+          document.write("<td class='red'>not elgible</td><tr>")
+        }
+        // document.write("</td><tr>")
+      </script>
+    </table>
+  </body>
+</html>

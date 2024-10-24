@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <h3 id="txt"></h3>
+    <script>
+        let students=['Akki','Bharat','Charan','Dinesh']
+        // document.getElementById("txt").innerHTML=students[1]
+        students.push("Lokesh")
+        // document.getElementById("txt").innerHTML=students[4]
+        // document.getElementById("txt").innerHTML=students.pop()
+
+        // students.unshift("Abhi")
+        // document.getElementById("txt").innerHTML=students[0]
+
+        students.shift()
+        document.getElementById("txt").innerHTML=students[0]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        h3{
+            color: red;
+        }
+    </Style>
+</head>
+<body>
+    <h1>javascript</h1>
+    <script>
+        let marks=prompt("Enter Marks")
+
+        if(marks<=40){
+            document.write("<h3>Failed</h3>");
+        }
+        else if(marks>40 && marks<65){
+            document.write("<h2>Second Class</h2>");
+        }
+        else if(marks>=65 && marks<95){
+            document.write("<h2>First Class</h2>");
+        }
+        else if(marks>=95 && marks<100){
+            document.write("<h2>Distionction Class &#127942 </h2>");
+        }
+        else{
+            document.write("<h3>Invalid Input</h3>")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,td,tr{
+        border-collapse: collapse;
+        border: 2px solid black;
+        padding: 10px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript-for -in -out</h1>
+    <script>
+        var days=['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
+        
+        //values = using (for of), is for Arrays
+        for(let day of days){
+            document.write(day+"<br>")
+        }
+
+        document.write("<br><br>")
+
+        //key value = using (for in)
+        for(let day in days){
+            document.write(day+" - "+days[day]+"<br>")
+        }
+
+
+        document.write("<br><br><br><br>")
+
+        document.write("<table><tr><td>key</td><td>value</td></tr>")
+          for(let day in days){
+            document.write("<tr><td>"+day+"</td><td>"+days[day]+"</td></tr>")
+          }
+          document.write("</table>")
+        
+    </script>
+  </body>
+</html>

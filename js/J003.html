@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        /* width: 500px; */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Total</th>
+        <th>value</th>
+      </tr>
+      <tr>
+        <script>
+          //variables
+          let num1 = prompt("Enter fiest numbere");
+          let num2 = prompt("Enter second number");
+          let total = Number(num1) + Number(num2);
+          document.write("<td>");
+          document.write(num1+"+"+num2);
+          document.write("</td>");
+          document.write("<td>");
+          document.write(total);
+          document.write("</td>");
+        </script>
+      </tr>
+    </table>
+  </body>
+</html>

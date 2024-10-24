@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1000px;
+            height: auto;
+            margin: auto;
+        }
+      .head {
+        background-color: violet;
+        width: 1000px;
+        height: 200px;
+        margin: auto;
+        
+      }
+      .left{
+        background-color: rgb(166, 70, 255);
+        width: 334px;
+        height: 300px;
+        float: left;
+      }
+      .right{
+        background-color: rgb(227, 197, 255);
+        width: 333px;
+        height: 300px;
+        float: left;
+      }
+      .middle{
+        background-color: rgb(188, 122, 250);
+        width: 333px;
+        height: 300px;
+        float: left;
+      }
+      @media screen and (max-width:999px) {
+        .container{
+            width: 100%;
+        }
+        .head{
+            width: 100%;
+        }
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 50%;
+        }
+        .middle{
+            width: 50%;
+        } 
+      }
+      @media screen and (max-width:700px) {
+        .container{
+            width: 100%;
+        }
+        .head{
+            width: 100%;
+        }
+        .left{
+            width: 100%;
+        }
+        .right{
+            width: 100%;
+        }
+        .middle{
+            width: 100%;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">Head</div>
+      <div class="left">LEFT</div>
+      <div class="middle">MIDDLE</div>
+      <div class="right">RIGHT</div>
+    </div>
+  </body>
+</html>

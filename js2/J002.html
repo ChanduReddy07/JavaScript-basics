@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Marks</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td id="c-1"></td>
+        <td id="c-2"></td>
+      </tr>
+    </table>
+
+    <script>
+      let marks = prompt("Enter Marks");
+      let result;
+
+      if (marks <= 40) {
+        result = "Failed";
+      } else if (marks > 40 && marks < 65) {
+        result = "Second Class";
+      } else if (marks >= 65 && marks < 95) {
+        result = "First Class";
+      } else if (marks >= 95 && marks < 100) {
+        result = "Distinction Class";
+      } else {
+        result = "Invalid Input";
+      }
+      document.getElementById("c-1").innerHTML = marks;
+      document.getElementById("c-2").innerHTML = result;
+    </script>
+  </body>
+</html>

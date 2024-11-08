@@ -27,5 +27,36 @@ diff= -for in:provides acess to the object keys
 
 while,do while
 
-destructuring:unpacking values from array, or properties from object,
-              into variable(2016)
+destructuring: unpacking values from array, or properties from object,
+               into variable(2016)
+
+
+---------------------------------------------------------
+30-10
+=====
+spread operator,rest operator
+spread=... =>arr[...arr1,...arr2,5, 6, 9]
+rest=in method(a,b,...c)
+
+getElementByID
+getElementByClassName
+
+querySelector
+querySelectorAll --pending
+
+events
+clicking on element,moving the mouse, pressing a key,loading a page
+
+  onclick event 
+  onmouseover event
+  onmouseout event
+  onscroll event
+  onchange event
+  onsubmit event
+  onfocus event
+  onblur event
+  onkeydown event
+  onkeyup event
+  onload event
+
+

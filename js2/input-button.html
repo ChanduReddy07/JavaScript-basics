@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="txt"></h1>
+    <select id="course" >
+      <option>html</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+      <option>Java</option>
+      <option>SQL</option>
+    </select>
+    <br />
+    <select id="col" onchange="demo()">
+      <option style="color: red">Red</option>
+      <option>Pink</option>
+      <option>Orange</option>
+      <option>Yellow</option>
+      <option>Blue</option>
+    </select>
+
+    <script>
+      function demo() {
+        const x = document.getElementById("course").value;
+        const c = document.getElementById("col").value;
+        document.getElementById("txt").innerHTML =
+          "You selected <span style=color:"+c+">" + x + "</span> Course";
+      }
+    </script>
+  </body>
+</html>

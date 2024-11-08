@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h3  id="bg"> javaScript</h3>
+
+    <select id="col" onchange="demo()">
+        <option style="color: red">Red</option>
+        <option>12px</option>
+        <option>18px</option>
+        <option>22px</option>
+        <option>28px</option>
+        <option>40px</option>
+      </select>
+
+
+      <script>
+        function demo(){
+            const x=document.getElementById("bg").value;
+            document.getElementById("bg").style.fontSize=x
+        }
+      </script>
+</body>
+</html>

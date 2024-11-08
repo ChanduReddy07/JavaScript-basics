@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS program to guess a number btw 1-10 ,prits coreect guess or not</h1>
+
+    <script>
+        let n=prompt("enter a number between 1-10 ")
+        let value=Math.floor(Math.random() * (10 - 1 + 1))+1
+        if(value==n){
+            alert("wow, Currect Guess.")
+        }else{
+            alert("Wrong Guess")
+        }
+        document.write(n)
+        document.write(value)
+    </script>
+</body>
+</html>

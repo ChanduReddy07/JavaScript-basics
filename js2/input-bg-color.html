@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg">
+    
+
+    <select id="col" onchange="demo()">
+        <option style="color: red">Red</option>
+        <option>Pink</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Blue</option>
+      </select>
+
+
+      <script>
+        function demo(){
+            const x=document.getElementById("bg").value;
+            document.getElementById("bg").style.backgroundColor=x
+        }
+      </script>
+</body>
+</html>

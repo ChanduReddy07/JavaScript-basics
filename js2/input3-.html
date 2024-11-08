@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>javaScript</h1>
+    <p>by clicking on the button the value of heading will change</p>
+    <br><br>
+    <h2 id="id">value</h2>
+    <button onclick="demo('Java')">Java</button>
+    <button onclick="demo('Python')">Python</button>
+    <button onclick="demo('AWS')">AWS</button>
+
+    <script>
+        function demo(course){
+            document.getElementById('id').innerHTML=course           
+        }
+    </script>
+  </body>
+</html>

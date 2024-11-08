@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>javaScript</h1>
+    <p>by clicking on the button the value of input will change</p>
+    <br><br>
+    <h2 id="txt">Changing the color</h2>
+    <button onclick="demo('Red')">Red</button>
+    <button onclick="demo('Blue')">Blue</button>
+    <button onclick="demo('Orange')">Orange</button>
+    <br><br>
+    <button onclick="demo('Black')">BLack</button>
+
+    <script>
+        function demo(color){
+            document.getElementById('txt').style.color=color           
+        }
+    </script>
+  </body>
+</html>
